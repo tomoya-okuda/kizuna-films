@@ -44,7 +44,6 @@ body {
   font-weight: 400; /* フォントウェイトを指定 */
   background: var(--Bagie100);
   color: var(--Black100);
-  max-width: 100vw;
   overflow-x: hidden;
 }
 
