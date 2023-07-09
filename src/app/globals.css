@@ -7,7 +7,13 @@
   --Green100: #b0d78a;
   --White100: #fff;
   --Black100: #1a1a1a;
-  --Bagie100: #fbf4ed;
+  --Beige100: #fbf4ed;
+}
+
+h5 {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 @font-face {
@@ -38,11 +44,16 @@
   font-style: normal;
 }
 
+.border-tb-black100 {
+  border-top: 1px solid theme('colors.Black100');
+  border-bottom: 1px solid theme('colors.Black100');
+}
+
 html,
 body {
   font-family: 'LINESeedJP_A_OTF', sans-serif;
   font-weight: 400; /* フォントウェイトを指定 */
-  background: var(--Bagie100);
+  background: var(--Beige100);
   color: var(--Black100);
   overflow-x: hidden;
 }

@@ -1,7 +1,14 @@
+import Header from '@/components/layout/Header';
+
 type Props = {};
 
 function page({}: Props) {
-  return <div>I am the Menu Page</div>;
+  return (
+    <main>
+      <Header />
+      <p>I am the Menu Page</p>
+    </main>
+  );
 }
 
 export default page;

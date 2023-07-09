@@ -1,9 +1,14 @@
-type Props = {}
+import Header from '@/components/layout/Header';
+
+type Props = {};
 
 function page({}: Props) {
   return (
-    <div>page</div>
-  )
+    <main>
+      <Header />
+      <p>I am the Privacy Policy Page</p>
+    </main>
+  );
 }
 
-export default page
+export default page;
