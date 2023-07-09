@@ -24,7 +24,7 @@ function Header({ banner = false, blog = false }: Props) {
         {blog ? (
           <div className="flex justify-between w-full items-center px-4">
             <Image
-              src="/images/logo-blog.svg"
+              src="/images/logo/logo-blog.svg"
               alt="logo-blog"
               width={148}
               height={16}
@@ -32,7 +32,12 @@ function Header({ banner = false, blog = false }: Props) {
             <Search />
           </div>
         ) : (
-          <Image src="/images/logo.svg" alt="logo" width={82} height={16} />
+          <Image
+            src="/images/logo/logo.svg"
+            alt="logo"
+            width={82}
+            height={16}
+          />
         )}
       </div>
     </header>
