@@ -14,6 +14,7 @@ function Header({ banner = false, blog = false }: Props) {
       {banner && (
         <Link
           href="/line"
+          passHref
           className="bg-Green100 flex justify-between items-center py-3 px-4 cursor-pointer"
         >
           <div className="flex items-center">
@@ -28,6 +29,7 @@ function Header({ banner = false, blog = false }: Props) {
         {blog ? (
           <Link
             href="/blog"
+            passHref
             className="flex justify-between w-full items-center px-4 cursor-pointer"
           >
             <Image
@@ -35,16 +37,18 @@ function Header({ banner = false, blog = false }: Props) {
               alt="logo-blog"
               width={148}
               height={16}
+              loading="eager"
             />
             <Search />
           </Link>
         ) : (
-          <Link href="/" className="cursor-pointer">
+          <Link href="/" className="cursor-pointer" passHref>
             <Image
               src="/images/logo/logo.svg"
               alt="logo"
               width={82}
               height={16}
+              loading="eager"
             />
           </Link>
         )}
