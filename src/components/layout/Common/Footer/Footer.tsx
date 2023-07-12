@@ -1,7 +1,7 @@
+import LinkFooter from '@/components/layout/Common/Footer/LinkFooter';
 import Link from 'next/link';
-import LinkFooter from '../ui/Buttons/LinkFooter';
-import Breadcrumb from './Breadcrumb';
 import Image from 'next/image';
+import SNSLink from '@/components/layout/Common/Footer/SNSLink';
 
 type Props = {};
 
@@ -63,50 +63,26 @@ function Footer({}: Props) {
 
       {/* SNS */}
       <div className="border-t-black100  flex justify-center gap-8 py-5">
-        <Link
+        <SNSLink
           href="https://www.instagram.com/kizuna_films/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="p-4 bg-White100 rounded-full border border-Black100"
-        >
-          <Image
-            src="/images/logo/instagram.webp"
-            alt="instagram"
-            width={32}
-            height={32}
-          />
-        </Link>
-        <Link
-          href="https://www.youtube.com/@Kizuna-Films"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="p-4 bg-White100 rounded-full border border-Black100"
-        >
-          <Image
-            src="/images/logo/youtube.svg"
-            alt="youtube"
-            width={32}
-            height={32}
-          />
-        </Link>
-        <Link
+          src="/images/logo/instagram.webp"
+        />
+        <SNSLink
           href="https://www.tiktok.com/@kizunafilms"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="p-4 bg-White100 rounded-full border border-Black100"
-        >
-          <Image
-            src="/images/logo/tiktok.svg"
-            alt="tiktok"
-            width={32}
-            height={32}
-          />
-        </Link>
+          src="/images/logo/tiktok.svg"
+        />
       </div>
 
       {/* Logo */}
       <div className="border-t-black100 py-4 flex justify-center">
-        <Image src="/images/logo/logo.svg" alt="logo" width={82} height={16} />
+        <Link href="/" className="cursor-pointer">
+          <Image
+            src="/images/logo/logo.svg"
+            alt="logo"
+            width={82}
+            height={16}
+          />
+        </Link>
       </div>
     </footer>
   );

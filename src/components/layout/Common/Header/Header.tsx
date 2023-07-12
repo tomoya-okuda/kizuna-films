@@ -1,6 +1,7 @@
 import Arrow from '@/components/atoms/Arrow';
 import Image from 'next/image';
 import Search from '@/components/atoms/Search';
+import Link from 'next/link';
 
 type Props = {
   banner?: boolean;
@@ -11,18 +12,24 @@ function Header({ banner = false, blog = false }: Props) {
   return (
     <header>
       {banner && (
-        <div className="bg-Green100 flex justify-between items-center py-3 px-4">
+        <Link
+          href="/line"
+          className="bg-Green100 flex justify-between items-center py-3 px-4 cursor-pointer"
+        >
           <div className="flex items-center">
             <h5 className="mr-2 mt-[-2px]">📢</h5>
             <h5>LINEで気軽にご相談ください！☺️</h5>
           </div>
           <Arrow />
-        </div>
+        </Link>
       )}
 
       <div className="border-tb-black100 flex justify-center items-center py-3">
         {blog ? (
-          <div className="flex justify-between w-full items-center px-4">
+          <Link
+            href="/blog"
+            className="flex justify-between w-full items-center px-4 cursor-pointer"
+          >
             <Image
               src="/images/logo/logo-blog.svg"
               alt="logo-blog"
@@ -30,14 +37,16 @@ function Header({ banner = false, blog = false }: Props) {
               height={16}
             />
             <Search />
-          </div>
+          </Link>
         ) : (
-          <Image
-            src="/images/logo/logo.svg"
-            alt="logo"
-            width={82}
-            height={16}
-          />
+          <Link href="/" className="cursor-pointer">
+            <Image
+              src="/images/logo/logo.svg"
+              alt="logo"
+              width={82}
+              height={16}
+            />
+          </Link>
         )}
       </div>
     </header>

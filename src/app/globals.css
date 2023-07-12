@@ -10,6 +10,13 @@
   --Beige100: #fbf4ed;
 }
 
+p {
+  font-size: 15px;
+  font-weight: 200;
+  line-height: 160%;
+  letter-spacing: 1px;
+}
+
 h4 {
   font-size: 14px;
   font-weight: 700;
@@ -24,29 +31,26 @@ h5 {
 
 @font-face {
   font-family: 'LINESeedJP_A_OTF';
-  src: url('/path/to/font/LINESeedJP_A_OTF_Bd.otf') format('opentype');
-  font-weight: 700;
+  src: url('/path/to/font/LINESeedJP_A_OTF_Th.otf') format('opentype');
+  font-weight: 200;
   font-style: normal;
 }
-
-@font-face {
-  font-family: 'LINESeedJP_A_OTF';
-  src: url('/path/to/font/LINESeedJP_A_OTF_Eb.otf') format('opentype');
-  font-weight: 800;
-  font-style: normal;
-}
-
 @font-face {
   font-family: 'LINESeedJP_A_OTF';
   src: url('/path/to/font/LINESeedJP_A_OTF_Rg.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'LINESeedJP_A_OTF';
-  src: url('/path/to/font/LINESeedJP_A_OTF_Th.otf') format('opentype');
-  font-weight: 200;
+  src: url('/path/to/font/LINESeedJP_A_OTF_Bd.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LINESeedJP_A_OTF';
+  src: url('/path/to/font/LINESeedJP_A_OTF_Eb.otf') format('opentype');
+  font-weight: 800;
   font-style: normal;
 }
 

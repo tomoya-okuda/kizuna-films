@@ -8,12 +8,12 @@ type Props = {
 
 function LinkFooter({ href, name }: Props) {
   return (
-    <>
-      <Link href={href} className="flex items-center gap-1">
+    <div className="relative block">
+      <Link href={href} className="inline-flex items-center gap-1">
         <h4>{name}</h4>
         <Arrow />
       </Link>
-    </>
+    </div>
   );
 }
 

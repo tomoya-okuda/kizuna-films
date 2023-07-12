@@ -1,10 +1,16 @@
-import Image from 'next/image';
-
 function Arrow() {
   return (
-    <div>
-      <Image src="/icons/arrow.svg" alt="arrow" width={8} height={14} />
-    </div>
+    <>
+      <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" fill="none">
+        <path
+          stroke="#1A1A1A"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="m3 4 3 3-3 3"
+        />
+      </svg>
+    </>
   );
 }
 
