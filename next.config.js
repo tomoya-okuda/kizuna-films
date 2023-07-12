@@ -2,6 +2,7 @@ const withFonts = require('next-fonts');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  favicon: '/favicon.ico',
   fonts: [
     {
       family: 'LINESeedJP_A_OTF',
