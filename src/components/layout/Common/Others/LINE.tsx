@@ -25,11 +25,7 @@ function LINE({}: Props) {
           無料でのご相談も可能ですので、 この機会にぜひご登録ください。
         </p>
       </div>
-      <Button
-        href="https://lin.ee/NF3N6NH"
-        text="LINEで友達追加する"
-        external={true}
-      />
+      <Button href="/line" text="詳しく見る" />
     </div>
   );
 }

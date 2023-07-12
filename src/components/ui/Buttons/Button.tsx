@@ -11,7 +11,7 @@ function Button({ href, text, external }: Props) {
   const linkProps = {
     href,
     className:
-      'flex items-center gap-2 bg-White100 border border-Black100 font-bold py-4 px-8 tracking-wider leading-[100%]',
+      'flex justify-center items-center gap-2 bg-White100 border border-Black100 font-bold py-4 px-8 tracking-wider leading-[100%] w-[240px]',
   };
 
   if (external) {
