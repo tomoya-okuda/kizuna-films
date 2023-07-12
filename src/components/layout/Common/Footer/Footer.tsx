@@ -2,6 +2,7 @@ import LinkFooter from '@/components/layout/Common/Footer/LinkFooter';
 import Link from 'next/link';
 import Image from 'next/image';
 import SNSLink from '@/components/layout/Common/Footer/SNSLink';
+import CTAFooter from '@/components/layout/Common/Footer/CTAFooter';
 
 type Props = {};
 
@@ -27,38 +28,13 @@ function Footer({}: Props) {
 
       {/* CTA */}
       <div className="border-t-black100 flex justify-between w-full">
-        <Link
+        <CTAFooter
           href="/booking"
-          className="flex-1 flex items-center justify-center p-5 bg-White100 cursor-pointer"
-        >
-          <div className="flex items-center gap-1">
-            <span className="font-bold">撮影を予約</span>
-            <Image
-              src="/icons/mail.svg"
-              alt="mail"
-              width={24}
-              height={24}
-              className="mt-[-2px]"
-            />
-          </div>
-        </Link>
-        <Link
-          href="https://lin.ee/NF3N6NH"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex-1 flex items-center justify-center p-5 bg-White100 border-l-black100 cursor-pointer"
-        >
-          <div className="flex items-center gap-1">
-            <span className="font-bold">LINEで相談</span>
-            <Image
-              src="/icons/chat.svg"
-              alt="chat"
-              width={24}
-              height={24}
-              className="mt-[-2px]"
-            />
-          </div>
-        </Link>
+          text="撮影を予約"
+          src="/icons/mail.svg"
+          line={true}
+        />
+        <CTAFooter href="/line" text="LINEで相談" src="/icons/chat.svg" />
       </div>
 
       {/* SNS */}
