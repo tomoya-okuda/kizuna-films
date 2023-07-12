@@ -1,6 +1,6 @@
 import CountDate from '@/components/ui/Others/CountDate';
 import CountTime from '@/components/ui/Others/CountTime';
-import Image from 'next/image';
+import Hero from './Hero';
 
 type Props = {};
 
@@ -13,15 +13,7 @@ function FV({}: Props) {
         <CountTime />
       </div>
       {/* ヒーローセクション */}
-      <div className="relative w-full min-h-[468px]">
-        <Image
-          src="/images/hero.avif"
-          alt="thumbnail"
-          loading="eager"
-          fill
-          className="object-cover"
-        />
-      </div>
+      <Hero />
     </div>
   );
 }
