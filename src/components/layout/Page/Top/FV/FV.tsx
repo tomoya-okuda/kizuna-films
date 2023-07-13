@@ -6,7 +6,7 @@ type Props = {};
 
 function FV({}: Props) {
   return (
-    <div className="relative border-b-black100 py-6 px-3 min-h-[80vh] w-full">
+    <div className="relative border-b-black100 pt-6 pb-[64px] px-3 w-full">
       {/* 日付と時間 */}
       <div className="flex justify-between mb-2">
         <CountDate />
