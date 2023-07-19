@@ -16,5 +16,14 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        '.stroke-Black100': {
+          '-webkit-text-stroke': '1px var(--Black100)',
+        },
+      };
+      addUtilities(newUtilities);
+    },
+  ],
 };
