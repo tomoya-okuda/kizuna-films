@@ -1,9 +1,15 @@
-function Arrow() {
+import React from 'react';
+
+type Props = {
+  color: string;
+};
+
+function Arrow({ color }: Props) {
   return (
     <>
       <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" fill="none">
         <path
-          stroke="#1A1A1A"
+          stroke={color}
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"

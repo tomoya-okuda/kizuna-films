@@ -19,7 +19,7 @@ function Button({ href, text, external }: Props) {
       <>
         <Link {...linkProps} target="_blank" rel="noopener noreferrer">
           {text}
-          <Arrow />
+          <Arrow color="var(--Black100)" />
         </Link>
       </>
     );
@@ -29,7 +29,7 @@ function Button({ href, text, external }: Props) {
     <>
       <Link {...linkProps}>
         {text}
-        <Arrow />
+        <Arrow color="var(--Black100)" />
       </Link>
     </>
   );
