@@ -7,15 +7,15 @@ type Props = {};
 
 function Sale({}: Props) {
   return (
-    <div className="bg-White100 border-b-black100 flex flex-col items-center py-10 px-4">
+    <div className="bg-White100 border-b-black100 flex flex-col items-center gap-4  py-10 px-4">
       <Comment text="今だけ、お得なキャンペーン実施中" />
       <div className="flex items-end gap-7">
         {/* left */}
         <div className="flex items-end gap-2">
-          <p className="font-Degular leading-none text-[112px] text-Yellow100 stroke-Black100">
+          <p className="leading-none font-[800] text-[88px] text-Yellow100 stroke-Black100">
             30
           </p>
-          <div className="font-bold mb-3">
+          <div className="font-bold mb-1">
             <p className="font-bold text-2xl">%</p>
             <p className="font-bold text-2xl">OFF</p>
           </div>
