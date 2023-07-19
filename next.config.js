@@ -33,6 +33,17 @@ const nextConfig = {
         },
       ],
     },
+    {
+      family: 'DegularDemo-Black',
+      fonts: [
+        {
+          file: '/font/DegularDemo-Black.otf',
+          weight: 800,
+          style: 'normal',
+          fontDisplay: 'swap',
+        },
+      ],
+    },
   ],
   webpack(config, options) {
     config.module.rules.push({

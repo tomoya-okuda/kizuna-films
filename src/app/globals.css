@@ -27,6 +27,10 @@
   border-left: 1px solid theme('colors.Black100');
 }
 
+.font-Degular {
+  font-family: 'DegularDemo-Black', sans-serif;
+}
+
 p {
   font-size: 15px;
   font-weight: 200;
