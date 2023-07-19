@@ -21,7 +21,7 @@ function Header({ banner = false, blog = false }: Props) {
             <h5 className="mr-2 mt-[-2px]">📢</h5>
             <h5>LINEで気軽にご相談ください！☺️</h5>
           </div>
-          <Arrow />
+          <Arrow color="var(--Black100)" />
         </Link>
       )}
 
